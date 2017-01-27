@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            elementFormDefault="qualified">
+
+    <xsd:element name="Transcript">
+        <xsd:complexType>
+            <xsd:sequence>
+
+                <xsd:element name="Name" type="xsd:string" />
+
+                <xsd:element name="University" type="xsd:string" />
+
+                <xsd:element name="Degree" type="xsd:string" />
+
+                <xsd:element name="Year">
+					
+                </xsd:element>
+
+                <xsd:element name="Courses">
+                    <xsd:complexType>
+                        <xsd:sequence>
+
+                            <xsd:element name="Course" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+
+                                        <xsd:element name="Name" type="xsd:string" />
+
+                                        <xsd:element name="ID" type="xsd:string">
+											
+                                        </xsd:element>
+
+                                        <xsd:element name="Marks" type="xsd:integer">
+											
+                                        </xsd:element>
+
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
